@@ -11,7 +11,7 @@ var app = {};
 function define(key, value, overwrite)
 {
 	if(overwrite || !app.hasOwnProperty(key))
-		app.key = value;
+		app[key] = value;
 }
 
 app.define = define;
